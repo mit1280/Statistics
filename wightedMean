@@ -1,0 +1,9 @@
+n=int(input())
+k1=list(map(int,input().split(' ',n)))
+k2=list(map(int,input().split(' ',n)))
+sum1=0
+sum=0
+for i,j in zip(k1,k2):
+    sum=sum+j
+    sum1=sum1+i*j
+print(round(sum1/sum,1))   
