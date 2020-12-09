@@ -1,0 +1,7 @@
+n = float(input())
+m = float(input())
+d = float(input())
+interval = float(input())
+z = float (input())
+print(round(m - d / (n**0.5)*z,2))
+print(round(m + d / (n**0.5)*z,2))
