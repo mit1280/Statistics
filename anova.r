@@ -1,0 +1,7 @@
+library("readxl")
+library(ggplot2)
+library('lsr')
+my_data <- read_excel("/Users/mit/Desktop/mary.xls", sheet = "Sheet1",na = "---")
+x <- aov(my_data$`Baby weight`~my_data$`mother’s edu`, data = my_data)
+etaSquared(x)
+summary(x)
